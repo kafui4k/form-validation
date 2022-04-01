@@ -1,0 +1,47 @@
+$padding: 0;
+$margin: 0;
+$visibility: none;
+$commonWidth: 100%;
+$borderBox: border-box;
+
+body {
+    font: 1em sans-serif;
+    width: 200px;
+    padding: $padding;
+    margin: $margin auto;
+}
+
+p * {
+    display: block;
+}
+
+input[type=email] {
+    -webkit-appearance: $visibility;
+    appearance: $visibility;
+
+    width: $commonWidth;
+    border: 1px solid #333;
+    margin: $margin;
+
+    font-family: inherit;
+    font-size: 90px;
+
+    box-sizing: $borderBox;
+}
+
+/* styles for the :invalid fields */
+.error {
+    width: $commonWidth;
+    padding: $padding;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: $borderBox;
+}
+
+.error.active {
+    padding: $padding.3em;
+}
